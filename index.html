@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#050a12" />
+  <meta name="description" content="Maxime Lubrano - Étudiant M1→M2 Cybersécurité, recherche alternance. Infrastructure, DevOps, Pentest." />
+  <title>Rayane Raab - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <!-- Optimisation: preload critical CSS -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="cursor-glow" style="transform: translate(1132px, 148px);"></div>
+  <!-- Terminal pop (fake command prompt) -->
+  <div id="term-pop" aria-hidden="true">
+    <div class="term-head">
+      <span class="term-dot d1"></span><span class="term-dot d2"></span><span class="term-dot d3"></span>
+      <span class="term-title">raabryn@kali: ~</span>
+    </div>
+    <pre class="term-body"><code id="term-code"></code></pre>
+  </div>
+
+
+<div id="bg-glow"></div>
+<div id="bg-grid"></div>
+<div id="scan-line"></div>
+<div id="pbar"></div>
+
+<!-- ═══════ NAV ═══════ -->
+<nav id="nav">
+  <a href="#home" class="logo">
+  Portfolio
+    <div class="logo-mark">
+  <svg viewBox="0 0 100 120" class="shield">
+  <path d="
+        M20 8
+        L80 8
+        L92 8
+        L92 45
+        L92 70
+        L70 105
+        L50 120
+        L30 105
+        L8 70
+        L8 45
+        L8 8 Z"
+        fill="url(#gradRed)"
+        stroke="#111"
+        stroke-width="4"
+        stroke-linejoin="miter"/>
+      <path id="shield-inner" d="
+        M26 16
+        L74 16
+        L84 16
+        L84 50
+        L84 68
+        L66 96
+        L50 110
+        L34 96
+        L16 68
+        L16 50
+        L16 16 Z"
+        fill="none"
+        stroke="rgba(255,255,255,.22)"
+        stroke-width="3"
+        stroke-linejoin="miter"/>
+
+      <path id="shield-seam" d="M50 12 L50 112"
+        fill="none"
+        stroke="rgba(255,255,255,.18)"
+        stroke-width="2"
+        stroke-linecap="round"/>
+
+
+  <path id="shield-crack-shadow"
+        d="M50 20 L45 32 L54 42 L46 54 L56 66 L48 78 L55 88 L50 108"
+        stroke="rgba(0,0,0,.62)" stroke-width="6.2" fill="none"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="shield-crack"
+        d="M50 20 L45 32 L54 42 L46 54 L56 66 L48 78 L55 88 L50 108"
+        stroke="rgba(255,255,255,.18)" stroke-width="2.4" fill="none"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Bigger Blue bandage X -->
+  <g>
+    <rect x="20" y="52" width="60" height="18" rx="8"
+          fill="#38c8f0" stroke="#0b0f16" stroke-width="3.5"
+          transform="rotate(45 50 60)"/>
+    <rect x="20" y="52" width="60" height="18" rx="8"
+          fill="#38c8f0" stroke="#0b0f16" stroke-width="3.5"
+          transform="rotate(-45 50 60)"/>
+  </g>
+
+  <defs>
+    <linearGradient id="gradRed" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff2e4d"/>
+      <stop offset="100%" stop-color="#b3001e"/>
+    </linearGradient>
+  </defs>
+</svg>
+</div>
+    <span style="color:var(--c1)">Cybersécurité</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#home"         class="active">Accueil</a></li>
+    <li><a href="#cv"           >Parcours</a></li>
+    <li><a href="#experiences"  >Expériences</a></li>
+    <li><a href="#competences"  >Compétences</a></li>
+      <li><a href="#contact"     >Contact</a></li>
+  </ul>
+  <div class="badge"><span class="dot"></span>Open to Work</div>
+</nav>
+
+<main>
+
+  <!-- ═══════ ACCUEIL ═══════ -->
+  <section id="home">
+    <svg class="cyber-decor" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="#3fd6c2" stroke-width="1.4">
+    <path d="M240 40 L360 95 V225 C360 320 300 380 240 415 C180 380 120 320 120 225 V95 Z" stroke-opacity="0.35"/>
+    <path d="M205 215 h70 a8 8 0 0 1 8 8 v55 a8 8 0 0 1 -8 8 h-70 a8 8 0 0 1 -8 -8 v-55 a8 8 0 0 1 8 -8 Z" stroke-opacity="0.55"/>
+    <path d="M215 215 v-25 a25 25 0 0 1 50 0 v25" stroke-opacity="0.55"/>
+    <circle cx="240" cy="255" r="7" stroke-opacity="0.55"/>
+    <path d="M240 262 v14" stroke-opacity="0.55"/>
+    <path d="M120 150 L40 150 L40 90" stroke-opacity="0.25"/>
+    <path d="M360 150 L440 150 L440 210" stroke-opacity="0.25"/>
+    <path d="M120 300 L55 300 L55 370" stroke-opacity="0.25"/>
+    <path d="M360 300 L425 300 L425 250" stroke-opacity="0.25"/>
+    <path d="M240 415 L240 465" stroke-opacity="0.25"/>
+    <path d="M175 105 L120 95" stroke-opacity="0.2"/>
+    <path d="M305 105 L360 95" stroke-opacity="0.2"/>
+  </g>
+  <g fill="#3fd6c2">
+    <circle cx="40" cy="90" r="3" fill-opacity="0.45"/>
+    <circle cx="440" cy="210" r="3" fill-opacity="0.45"/>
+    <circle cx="55" cy="370" r="3" fill-opacity="0.45"/>
+    <circle cx="425" cy="250" r="3" fill-opacity="0.45"/>
+    <circle cx="240" cy="465" r="3" fill-opacity="0.45"/>
+    <circle cx="120" cy="95" r="2.5" fill-opacity="0.3"/>
+    <circle cx="360" cy="95" r="2.5" fill-opacity="0.3"/>
+  </g>
+</svg>
+    <div class="wrap">
+      <div class="hero-grid">
+
+        <div>
+          <p class="hero-eyebrow fu"><span class="dot"></span> Disponible pour un stage de fin d'étude</p>
+
+
+<h1 class="hero-name fu glitch-stack">
+  <span class="glitch-line">
+    <span class="glitch" data-text="Rayane">Rayane</span>
+  </span>
+  <span class="glitch-line">
+    <span class="glitch glitch-grad" data-text="Raab">Raab</span>
+  </span>
+</h1>
+
+
+          <p class="hero-role fu">
+            <b>//</b> Étudiant à l'université Paris Cité<br>
+            <b>//</b> Filiaire Cybersécurité et E-santé
+          </p>
+
+          <p class="hero-desc fu">
+            Curieux et rigoureux, je possède une forte capacité d’analyse ainsi qu’un sens aigu de l’initiative. Passionné par la sécurité réseau, de la conception à la sécurisation d’environnements LAN et des services critiques, je dispose déjà d’une première expérience pratique acquise via des projets
+            académiques et personnels. Rapidement opérationnel, je m’attache à proposer des solutions efficaces pour atteindre les objectifs fixés, notamment en configuration, analyse de trafic et détection d’anomalies.
+          </p>
+
+          <div class="hero-ctas fu">
+            <a href="#experiences" class="btn btn-p">→ Expériences</a>
+            <a href="#competences" class="btn btn-o">⌗ Compétences</a>
+            <a href="./cv.pdf" id="cvbtn" class="btn btn-p">📄 Télécharger mon CV</a>
+          </div>
+        </div>
+
+        <!-- Identity card -->
+        <div class="id-card card fu">
+          <div class="id-av"><img src="photo.jpg" alt="Rayane Raab" class="id-av-img"></div>
+          <div class="id-name">Rayane Raab</div>
+          <div class="id-role">Hardening · DevOps · Infrastructure · Pentest</div>
+          <div class="id-sep"></div>
+          <div style="width:100%">
+            <div class="id-row"><span class="ik">Niveau</span><span class="iv hi">M2</span></div>
+            <div class="id-row"><span class="ik">Technologies</span><span class="iv a">20+ maîtrisées</span></div>
+            <div class="id-row"><span class="ik">Mobilité</span><span class="iv">Ile-De-France</span></div>
+            <div class="id-row"><span class="ik">Langues</span><span class="iv">Français, Anglais, Kabyle, Arabe.</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ CV ═══════ -->
+  <section id="cv">
+    <div class="wrap">
+      <div class="fu">
+        <p class="sec-eyebrow">Étapes</p>
+        <h2 class="sh">Parcours</h2>
+        <p class="sh-sub">Mon parcours académique et universitaire.</p>
+      </div>
+
+      <div class="cv-layout">
+
+        <div class="cv-main fu">
+          <div>
+            <div class="block-ttl">Formation</div>
+            <div class="tl">
+              <div class="tl-i">
+                <div class="tl-sp"><div class="tl-d"></div><div class="tl-ln"></div></div>
+                <div class="tl-b">
+                  <div class="tl-dt">2025 — 2027</div>
+                  <div class="tl-t">Master Cybersécurité (M1 → M2 en cours)</div>
+                  <div class="tl-s">Université Paris Cité Ex Paris Descartes</div>
+                  <div class="tl-tx">Sécurité réseau, Pentest et Hacking éthique, Cryptographie avancée et Blockchain, Analyse Forensique & Malware, RGPD et Conformité, Cloud & IoT Security, Sécurité SIEM/SOC, ...</div>
+                </div>
+              </div>
+              <div class="tl-i">
+                <div class="tl-sp"><div class="tl-d g"></div></div>
+                <div class="tl-b">
+                  <div class="tl-dt">2024 — 2025</div>
+                  <div class="tl-t">Licence Informatique et Applications (L3)</div>
+                  <div class="tl-s">Université Paris Cité Ex Paris Descartes</div>
+                  <div class="tl-tx">Développement Web, programmation et algorithmique, réseaux, systèmes d'exploitation, génie logiciel, bases de données et introduction à la cybersécurité. Licence obtenue avec mention bien !</div>
+                </div>
+              </div>
+              <div class="tl-i">
+                <div class="tl-sp"><div class="tl-d g"></div></div>
+                <div class="tl-b">
+                  <div class="tl-dt">2022 — 2024</div>
+                  <div class="tl-t">Licence Informatique (L1 → L2)</div>
+                  <div class="tl-s">Université d'Angers</div>
+                  <div class="tl-tx">Concepts fondamentaux et généraux de l'informatique.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="block-ttl">Projets personnels</div>
+            <div class="tl">
+              <div class="tl-i">
+                <div class="tl-sp"><div class="tl-d"></div><div class="tl-ln"></div></div>
+                <div class="tl-b">
+                  <div class="tl-dt">09.2025 - 01.2026</div>
+                  <div class="tl-t">Simulation d’une architecture réseau d’entreprise avec pfSense (Homelab)  </div>
+                  <div class="tl-s">Projet en solo</div>
+                  <div class="tl-tx">Conception et mise en place d’une infrastructure réseau complète de type entreprise à l’aide de pfSense, intégrant plusieurs zones distinctes (LAN, DMZ et accès Internet) ainsi que plusieurs machines virtuelles. Déploiement et configuration de services essentiels tels que DHCP, DNS, SSH, messagerie et VPN, depuis leur installation jusqu’à leur mise en service. Définition et ajustement des règles de filtrage, de NAT et de masquerading afin de maîtriser les flux entre les différentes zones, de sécuriser les accès distants et de garantir une segmentation réseau cohérente et adaptée aux besoins de l’infrastructure.</div>
+                </div>
+              </div>
+              
+              <div class="tl-i">
+                <div class="tl-sp"><div class="tl-d"></div><div class="tl-ln"></div></div>
+                <div class="tl-b">
+                  <div class="tl-dt">01.2025 - 06.2025</div>
+                  <div class="tl-t"><a href="https://chefbot-front.onrender.com/">ChefBot - Chatbot Basique avec IA pré-entrainée</a></div>
+                  <div class="tl-s">Projet en binôme (backend actuellement HS pour expiration de l'hébergement)</div>
+                  <div class="tl-tx">Conception et développement d’un site web intégrant un chatbot spécialisé dans les recettes de cuisine, avec gestion de l’historique des conversations et mise en place d’un système d’authentification sécurisé. Le projet repose sur une architecture full-stack combinant React/Vue.js pour l’interface utilisateur, Flask pour le back-end et SQLite pour la gestion des données.
+                    <br>Développement et intégration d’API pour assurer la communication entre les différents composants de l’application, avec mise en place de Nginx pour la gestion et le déploiement du serveur. Utilisation de Git pour le suivi et la gestion du code, de Postman pour tester les API et de Scikit-learn pour développer et intégrer la partie intelligence artificielle du chatbot.
+                  </div>
+                </div>
+              </div>
+
+              <div class="tl-i">
+                <div class="tl-sp"><div class="tl-d"></div><div class="tl-ln"></div></div>
+                <div class="tl-b">
+                  <div class="tl-dt">09.2024 - 01.2025</div>
+                  <div class="tl-t"><a href="https://github.com/RynRAAB/MINI-SGBD">Mini-SGBDR – Système de Gestion de bases de données relationnel from scratch</a></div>
+                  <div class="tl-s">Projet en Binôme</div>
+                  <div class="tl-tx">Développement d’un mini système de gestion de bases de données (SGBD) en Java, permettant de stocker et manipuler des données de manière persistante à travers une interface simplifiée prenant en charge des requêtes SQL basiques.
+                    <br>Implémentation de la gestion des pages de données en mémoire et d’un buffer pool afin de contrôler les échanges entre la mémoire et le stockage disque et d’optimiser les accès aux données. Les données sont organisées et persistées dans des fichiers, avec mise en place de mécanismes d’indexation pour améliorer les performances de recherche. Ce projet a permis d’approfondir le fonctionnement interne d’un SGBD, notamment la gestion de la mémoire, la persistance des données et le contrôle des accès au stockage.
+                  </div>
+                </div>
+              </div>
+
+              <div class="tl-i">
+                <div class="tl-sp"><div class="tl-d"></div><div class="tl-ln"></div></div>
+                <div class="tl-b">
+                  <div class="tl-dt">01.2025 - 05.2025</div>
+                  <div class="tl-t">Reconnaissance d’escaliers et apprentissage automatique</div>
+                  <div class="tl-s">Projet en solo</div> 
+                  <div class="tl-tx">Création et annotation d’un dataset personnalisé d’images d’escaliers à l’aide de LabelMe, puis mise en place d’une chaîne complète de traitement et de classification d’images en Python.
+                    <br>Réalisation de différentes étapes de prétraitement avec OpenCV, notamment le filtrage, le seuillage et la détection de contours, afin d’extraire et de mettre en évidence les caractéristiques pertinentes des images. Entraînement d’un modèle de classification classique, puis évaluation de ses performances à l’aide de plusieurs métriques telles que l’accuracy, le recall et le F1-score. Utilisation de NumPy et Matplotlib pour le traitement des données et la visualisation des résultats.
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="tl-i">
+                <div class="tl-sp"><div class="tl-d g"></div><div class="tl-ln"></div></div>
+                <div class="tl-b">
+                  <div class="tl-dt">Continu</div>
+                  <div class="tl-t">Rootme & HTB</div>
+                  <div class="tl-s">Hacking éthique & Hardening</div>
+                  <div class="tl-tx">Exploitation, privilege escalation, web attacks, forensics — pratique régulière hors cursus avec une cinquantaine de challenges résolus sur rootme et une dizaine de machines HTB expoloitées...</div>
+                </div>
+              </div>
+
+              <div class="tl-i">
+                <div class="tl-sp"><div class="tl-d g"></div><div class="tl-ln"></div></div>
+                <div class="tl-b">
+                  <div class="tl-dt">Continu</div>
+                  <div class="tl-t">Certifications</div>
+                  <div class="tl-s">MOOC CNIL, MOOC ANSSI, CSNA Stormshield.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ EXPÉRIENCES ═══════ -->
+  <section id="experiences">
+    <div class="wrap">
+      <div class="fu">
+        <p class="sec-eyebrow">Terrain</p>
+        <h2 class="sh">Expériences Pro</h2>
+        <p class="sh-sub">Ce que j'ai fait et ce que j'ai appris.</p>
+      </div>
+
+      <div class="xcard card fu">
+        <div class="xhdr">
+          <div>
+            <div class="xco">projet Freelance : Boutique en ligne</div>
+            <div class="xrole">Développeur Logiciel & Web · Freelance</div>
+          </div>
+          <div class="xmeta">
+            <div class="xdate">Été 2025 · 6 semaines</div>
+            <div class="xloc">📍 France</div>
+          </div>
+        </div>
+        <div class="tags">
+          <span class="tag t3">Développement web</span>
+          <span class="tag t3">Développement applicatif</span>
+          <span class="tag t3">Gestion de projet</span>
+          <span class="tag t3">Communication client</span>
+          <span class="tag t3">Sécurité web</span>
+          <span class="tag t3">Rigueur / recette</span>
+          <span class="tag t3">Collaboration entre collègues</span>
+        </div>
+        <ul class="xlist">
+          <li>Recueillir et formaliser le besoin du client (fonctionnalités, contraintes, budget, délais).</li>
+          <li>Concevoir l'architecture et les maquettes de la boutique en ligne (site web et application).</li>
+          <li>Développer le catalogue produits, la fiche produit, le panier et le parcours de commande.</li>
+          <li>Mettre en place la gestion des comptes clients et l'espace d'administration pour que le client gère ses produits et commandes.</li>
+          <li>Intégrer une solution de paiement en ligne.</li>
+          <li>Tester, corriger les bugs et faire valider chaque étape par le client.</li>
+          <li>Livrer le projet, le mettre en ligne et former le client à son utilisation.</li>
+        </ul>
+      </div>
+
+
+
+
+      <div class="xcard card fu">
+        <div class="xhdr">
+          <div>
+            <div class="xco">Amazon - Job étudiant</div>
+            <div class="xrole">Livreur Amazon · CDI Weekends</div>
+          </div>
+          <div class="xmeta">
+            <div class="xdate">08.2024 - à ce jour</div>
+            <div class="xloc">📍 Noisy Le Grand, France</div>
+          </div>
+        </div>
+        <div class="tags">
+          <span class="tag t3">Autonomie</span>
+          <span class="tag t3">Gestion du temps</span>
+          <span class="tag t3">Gestion de la pression</span>
+          <span class="tag t3">Fiabilité</span>
+          <span class="tag t3">Respect des procédures</span>
+          <span class="tag t3">Sens du service</span>
+        </div>
+        <ul class="xlist">
+          <li>Préparer et organiser ses tournées de livraison de façon autonome</li>
+          <li>Livrer les colis dans les délais impartis, en respectant les consignes et les procédures.</li>
+          <li>Gérer les imprévus (adresse introuvable, client absent, incident de route).</li>
+          <li>Assurer le contact avec les clients et représenter l'entreprise auprès d'eux.</li>
+          <li>Manipuler et suivre les colis via l'outil de scan et de suivi.</li>
+        </ul>
+      </div>
+    
+
+      <!-- OTW -->
+      <div class="xcard card fu" style="border-color:rgba(45,245,196,.14);">
+        <div class="xhdr">
+          <div>
+            <div class="xco" style="color:var(--c2);">Prochaine étape</div>
+            <div class="xrole">Stage de fin d'études M2 — Stage de 6 mois</div>
+          </div>
+          <div class="xmeta">
+            <div class="xdate otw" style="border-color:rgba(45,245,196,.28);color:var(--c2);">Open to Work</div>
+          </div>
+        </div>
+        <div class="tags">
+          <span class="tag t3">SOC / Blue Team</span>
+          <span class="tag t4">Red Team</span>
+          <span class="tag t3">DevSecOps</span>
+          <span class="tag t3">Cloud Security</span>
+        </div>
+        <ul class="xlist">
+          <li>Disponible pour un stage à partir du 8 février 2027, dans le cadre de la validation de mon Master Cyber.</li>
+          <li>Intéressé par des missions offensives, défensives ou DevSecOps dans un contexte technique stimulant.</li>
+          <li>Rigueur, curiosité technique et pratique terrain régulière via Rootme, HTB et projets personnels.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════ COMPÉTENCES ═══════ -->
+  <section id="competences">
+    <div class="wrap">
+      <div class="fu">
+        <p class="sec-eyebrow">Arsenal</p>
+        <h2 class="sh">Compétences</h2>
+        <p class="sh-sub">Langages, outils et domaines maîtrisés.</p>
+      </div>
+
+      <div class="sk-grid">
+        <div class="sk-card card fu">
+          <div class="sk-ico">💻</div>
+          <div class="sk-cat">Développement & Scripting</div>
+          <div class="bar"><div class="bar-h"><span class="bar-n">Python</span><span class="bar-p">90%</span></div><div class="bar-t"><div class="bar-f" style="width:90%"></div></div></div>
+          <div class="bar"><div class="bar-h"><span class="bar-n">Bash / Shell</span><span class="bar-p">70%</span></div><div class="bar-t"><div class="bar-f" style="width:70%"></div></div></div>
+          <div class="bar"><div class="bar-h"><span class="bar-n">DevWeb : JS(React) / PHP(Flask)</span><span class="bar-p">60%</span></div><div class="bar-t"><div class="bar-f" style="width:60%"></div></div></div>
+          <div class="bar"><div class="bar-h"><span class="bar-n">C++ / Java</span><span class="bar-p">50%</span></div><div class="bar-t"><div class="bar-f" style="width:50%"></div></div></div>
+        </div>
+
+        <div class="sk-card card fu">
+          <div class="sk-ico">🔐</div>
+          <div class="sk-cat">Cybersécurité</div>
+          <div class="bar"><div class="bar-h"><span class="bar-n">Réseaux & Infrastructure</span><span class="bar-p">80%</span></div><div class="bar-t"><div class="bar-f gn" style="width:80%"></div></div></div>
+          <div class="bar"><div class="bar-h"><span class="bar-n">Monitoring et Détection (SOC)</span><span class="bar-p">80%</span></div><div class="bar-t"><div class="bar-f gn" style="width:80%"></div></div></div>
+          <div class="bar"><div class="bar-h"><span class="bar-n">Gouvernance & Conformité</span><span class="bar-p">70%</span></div><div class="bar-t"><div class="bar-f gn" style="width:70%"></div></div></div>
+          <div class="bar"><div class="bar-h"><span class="bar-n">Analyse de vulnérabilités et Pentest</span><span class="bar-p">30%</span></div><div class="bar-t"><div class="bar-f gn" style="width:30%"></div></div></div>
+        </div>
+
+        <div class="sk-card card fu">
+          <div class="sk-ico">🧩</div>
+          <div class="sk-cat">Divers</div>
+          <div class="bar"><div class="bar-h"><span class="bar-n">Développement Web</span><span class="bar-p">70%</span></div><div class="bar-t"><div class="bar-f pu" style="width:70%"></div></div></div>
+          <div class="bar"><div class="bar-h"><span class="bar-n">Bases de données & Modélisation</span><span class="bar-p">50%</span></div><div class="bar-t"><div class="bar-f pu" style="width:50%"></div></div></div>
+          <div class="bar"><div class="bar-h"><span class="bar-n">Machine Learning & IA</span><span class="bar-p">30%</span></div><div class="bar-t"><div class="bar-f pu" style="width:30%"></div></div></div>
+          <div class="bar"><div class="bar-h"><span class="bar-n">Environnements & Tools (Git, VB, Linux, Suite office, IAs..)</span><span class="bar-p">90%</span></div><div class="bar-t"><div class="bar-f pu" style="width:90%"></div></div></div>
+        </div>
+      </div>
+        <div class="tools-split">
+
+          <div class="tools-block offensive">
+            <div class="tools-subttl"><span class="tools-ico">⚔️</span> Offensif</div>
+            <div class="tools">
+              <span class="tool">Nmap</span>
+              <span class="tool">Metasploit</span>
+              <span class="tool">Burp Suite</span>
+              <span class="tool">SQLmap</span>
+              <span class="tool">Hydra</span>
+              <span class="tool">John the Ripper</span>
+              <span class="tool">Hashcat</span>
+              <span class="tool">SQLmap</span>
+              <span class="tool">Evil-WinRM</span>
+              <span class="tool">Bettercap</span>
+            </div>
+          </div>
+
+          <div class="tools-block defensive">
+            <div class="tools-subttl"><span class="tools-ico">🛡️</span> Défensif</div>
+            <div class="tools">
+              <span class="tool">Wireshark</span>
+              <span class="tool">VPN (ipsec, ssl)</span>
+              <span class="tool">iptables</span>
+              <span class="tool">pfSense</span>
+              <span class="tool">tcpdump</span>
+              <span class="tool">SIEM</span>
+              <span class="tool">IDS/IPS (snort)</span>
+              <span class="tool">Surveillance et détéction</span>
+            </div>
+          </div>
+          </div>
+        </div>
+        </section>
+      <!-- CTA -->
+
+      <div id="contact" class="cta-card cardct fu">
+        <p class="sec-eyebrow" style="justify-content:center;">Contact</p>
+        <div class="cta-t">Intéréssé par mon profil ?</div>
+        <p class="cta-s">Disponible pour un stage de fin d'études en Cybersécurité à partir du 8 février 2027.</p>
+        <div class="cta-links">
+          <a href="#" id="contact-btn" class="btn btn-p">✉️ Me contacter</a>
+          <a href="https://www.linkedin.com/in/rayane-raab/" target="_blank" class="btn btn-o">LinkedIn</a>
+          <a href="https://github.com/RynRAAB/" target="_blank" class="btn btn-o">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+
+</main>
+
+<footer>
+  <p>© 2026 <a href="#home">Rayane Raab</a> — Portfolio Cybersécurité</p>
+</footer>
+
+
+<!-- ═══════ CV MODAL ═══════ -->
+<div id="cv-modal" class="cv-modal" aria-hidden="true">
+  <div class="cv-overlay"></div>
+
+  <div class="cv-container" role="dialog" aria-modal="true" aria-label="Aperçu du CV">
+    <button class="cv-close" type="button" onclick="closeCV()">✕</button>
+    <iframe src="./cv.pdf" class="cv-frame" title="CV — Maxime Lubrano"></iframe>
+  </div>
+</div>
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
