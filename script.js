@@ -150,9 +150,24 @@ function openCV() {
     document.body.style.overflow = '';
   }
 
+  // if (cvBtn) {
+  //   cvBtn.addEventListener('click', (e) => {
+  //     e.preventDefault();
+  //     openCV();
+  //   });
+  // }
+
   if (cvBtn) {
     cvBtn.addEventListener('click', (e) => {
       e.preventDefault();
+  
+      // 📱 Sur petit écran : ouvrir directement le CV
+      if (window.innerWidth <= 768) {
+        window.location.href = 'https://rynraab.github.io/myportfolio/CV.pdf';
+        return;
+      }
+  
+      // 💻 Sur PC : afficher l'aperçu dans le modal
       openCV();
     });
   }
